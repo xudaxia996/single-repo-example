@@ -1,49 +1,62 @@
 
  <!-- 上方栏 -->
 <view class="kuang_body">
+<view class="container01">
 
+<!-- 备忘录文字标题 -->
 <view class="title"><text class="title_word">备忘录</text></view>
 
-<navigator class="Category" hover-class="none"> <image src="/image/category.png" class="category_style"></image></navigator>
 
-
-<navigator class="Search" url="/pages/search/search" hover-class="none">
+<view class="Function">
+<!-- 菜单栏 -->
+<navigator hover-class="none"> <image src="/image/category.png" class="category_style"></image></navigator>
+<!-- 搜索 -->
+<navigator url="/pages/search/search" hover-class="none">
  <image src="/image/search.png" class="search_style"></image></navigator>
 
+ </view>
+</view>
 </view>
 
 
 
 <view class="bei_body">
-<!-- 单条备忘录 -->    <!-- 可以用obj来设置抽象数据类型 -->  
+<!-- 单条备忘录 -->    
   <view class="bei">
   <!-- 1.备忘录标题 -->
     <view class="bei_title">
     <text>1.去北湖南路拿快递</text>
     </view>
 
-  <!-- 2.备忘录收藏 -->
-    <view class="bei_favorite">
-    <image src="/image/favorite.png" class="favorite_style"></image>
+  <view class="container02">
+
+  <!-- 2.备忘录记录时间 -->
+
+    <view class="bei_recordtime"><text>11月21日</text></view>
+ 
+
+  <!-- 3.备忘录收藏 -->
+    <view class="bei_favorite"><image src="/image/favorite.png" class="favorite_style"></image></view>
+
+ </view>
+
+  <!--4.备忘录提示 -->
+    <view class="container03">
+    <!-- 图标 -->
+    <view class="remind_icon">
+    <image src="/image/time.png" class="time_style"></image>
     </view>
 
-  <!-- 3.备忘录记录时间 -->
-    <view class="bei_recordtime">
-    <text>11月21日</text>
-    </view>
-
-
-
-  <!--4.备忘录提示时间 -->
-    <view class="bei_remind">
+    <!-- 时间 -->
+    <view class="remind_time">
     <text>12月10日 10：00</text>
     </view>
-
+  </view>
   </view>
 
 
 
-  <view class="bei"></view>
+  <view class="bei" bindlongpress="myTap"></view>
   <view class="bei"></view>
   <view class="bei"></view>
 
