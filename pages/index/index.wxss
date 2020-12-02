@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 1.页面 */
 page{
   background-color:white;
@@ -100,3 +101,107 @@ page{
 .remind_time{
   font-size:12px;
 }
+=======
+/* 1.页面 */
+page{
+  background-color:white;
+}
+
+
+/* 2.上方栏 */
+.container01{
+  background-color:#1296db;
+  width:100%;
+  height: 80px;
+}
+
+.title{
+  width: 80px;
+  height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.title_word{
+  font-size:20px;
+  color:white;
+}
+
+.Function{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.category_style{
+  width:20px;
+  height: 20px;
+}
+
+.search_style{
+  width:20px;
+  height: 20px;
+}
+
+
+
+/* 3.备忘录 */
+
+.bei{
+  background-color:cornsilk;
+  height: 70px;
+  color:black;
+  border:5px;
+  border-radius: 10px;
+  margin: 5px 6px 10px 6px; 
+  box-shadow: 5px 5px 5px rgb(77, 71, 71);
+}
+
+/* 1.备忘录标题 */
+.bei_title{
+  font-size:18px;
+}
+
+.container02{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* 2.备忘录记录时间 */
+.bei_recordtime{
+  font-size:12px;
+}
+
+/* 3.备忘录收藏 */
+.bei_favorite{
+}
+
+.favorite_style{
+  width: 18px;
+  height: 18px;
+}
+
+/* 4.备忘录提醒 */
+.container03{
+  display:flex;
+  justify-content:flex-end;
+  margin-right: 5px;
+}
+
+.remind_icon{
+}
+
+.time_style{
+  width: 18px;
+  height: 18px;
+}
+
+.remind_time{
+  font-size:12px;
+}
+>>>>>>> fe1a7fc12ed3d623378ebb1004174bdc41f4dc97

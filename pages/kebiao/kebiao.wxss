@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 /* pages/kebiao/kebiao.wxss */
 page{
   background-color:white;
+=======
+/* pages/kebiao/kebiao.wxss */
+page{
+  background-color:white;
+>>>>>>> fe1a7fc12ed3d623378ebb1004174bdc41f4dc97
 }
