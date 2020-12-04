@@ -9,12 +9,13 @@ plugin
   .use(solarLunar)
   .use(selectable)
 const app = getApp()
-var c=0;
+
+
 Page({
-  clickme: function() { 
-    c=c+1; 
-    this.setData({msg:c+"只羊"})
+  clickme02: function() { 
+    wx.navigateTo({ url:'../commit_job/commit_job' })
   },
+  
   data: {
     time: (new Date()).toString(),
     array:[1,2,3],
