@@ -1,10 +1,10 @@
 
  <!-- 上方栏 -->
-<view class="kuang_body">
+
 <view class="container01">
 
 <!-- 备忘录文字标题 -->
-<view class="title"><text class="title_word">备忘录</text></view>
+<view class="title"><text class="title_word">————————————</text></view>
 
 
 <view class="Function">
@@ -13,8 +13,6 @@
 <!-- 搜索 -->
 <navigator url="/pages/search/search" hover-class="none">
  <image src="/image/search.png" class="search_style"></image></navigator>
-
- </view>
 </view>
 </view>
 
