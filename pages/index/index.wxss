@@ -80,7 +80,7 @@ page{
   display:flex;
   justify-content: space-between;
   vertical-align: bottom;
-  align-items:center;
+  align-items: center;
   margin-left: 10px;
   margin-right: 40px;
   margin-top: -8px;
