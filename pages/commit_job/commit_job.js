@@ -121,6 +121,7 @@ Page({
     var memo_value = that.data.value;
     var time_detail = that.data.time_detail;
     var ddl = that.data.ddl;
+    var value = that.data.value;
   
     if (title == '' || ddl=='' || time_detail==''||value==''){
       wx.showToast({
@@ -129,13 +130,6 @@ Page({
         duration: 1000
       })
     }
-    // else if (memo_value == '' ){
-    //   wx.showToast({
-    //     title: '请输入内容',
-    //     icon: 'none',
-    //     duration: 1000
-    //   })
-    // }
     else{
 
       that.data.memoLists.unshift({ "title": title ,"ddl":ddl,"time_detail":time_detail,"value":value});
