@@ -23,34 +23,30 @@
   <view class="bei">
   <!-- 1.备忘录标题 -->
     <view class="bei_title">
-    <text>1.去北湖南路拿快递</text>
+    <text>去北湖南路拿快递</text>
+    </view>
+  <!-- 2.备忘录编号及收藏 -->
+  <view class="bei_NumAndFav">
+    <text>1</text>
+    <image src="/image/favorite.png" class="favorite_style"></image>
     </view>
 
   <view class="container02">
-
-  <!-- 2.备忘录记录时间 -->
+  <!-- 3.备忘录记录时间及提示 -->
 
     <view class="bei_recordtime"><text>11月21日</text></view>
- 
-
-  <!-- 3.备忘录收藏 -->
-    <view class="bei_favorite"><image src="/image/favorite.png" class="favorite_style"></image></view>
-
- </view>
-
-  <!--4.备忘录提示 -->
     <view class="container03">
+    
     <!-- 图标 -->
-    <view class="remind_icon">
     <image src="/image/time.png" class="time_style"></image>
-    </view>
-
     <!-- 时间 -->
     <view class="remind_time">
     <text>12月10日 10：00</text>
     </view>
+
+    </view>
   </view>
-  </view>
+</view>
 
 
 

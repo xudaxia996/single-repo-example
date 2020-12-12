@@ -52,54 +52,66 @@ page{
 
 .bei{
   background-color:cornsilk;
-  height: 70px;
-  color:black;
+  height: 60px;
+  color:rgb(48, 48, 48);
   border:5px;
-  border-radius: 10px;
-  margin: 5px 6px 10px 6px; 
-  box-shadow: 5px 5px 5px rgb(77, 71, 71);
+  border-radius: 35px;
+  margin: 15px 15px 0px 15px;
+  padding-top: 10px;
+  box-shadow: 3px 3px 3px rgb(77, 71, 71);
 }
 
 /* 1.备忘录标题 */
 .bei_title{
-  font-size:15px;
+  font-size:18px;
+  margin: 0px 0px -10px 35px;
+
+}
+
+.bei_NumAndFav{
+  display:flex;
+  vertical-align: middle;
+  justify-content: space-between;
+  font-size:20px;
+  margin-left: 15px;
 }
 
 .container02{
   display:flex;
   justify-content: space-between;
-  align-items:center;
-  margin-left: 5px;
-  margin-right: 5px;
+  vertical-align: bottom;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 40px;
+  margin-top: -8px;
+}
+
+.container03{
+  display:flex;
+  justify-content: space-between;
+  vertical-align: bottom;
+  align-items:right;
 }
 
 /* 2.备忘录记录时间 */
 .bei_recordtime{
   font-size:12px;
+  margin: 0px 0px 0px 26px;
 }
 
 /* 3.备忘录收藏 */
-.bei_favorite{
-}
 
 .favorite_style{
-  width: 18px;
-  height: 18px;
-}
-
-/* 4.备忘录提醒 */
-.container03{
-  display:flex;
-  justify-content:flex-end;
-  margin-right: 5px;
-}
-
-.remind_icon{
+  margin-top: 0px;
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
 }
 
 .time_style{
   width: 18px;
   height: 18px;
+  margin-right: 5px;
 }
 
 .remind_time{
