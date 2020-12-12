@@ -2,9 +2,10 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/rili/rili",
     "pages/kebiao/kebiao",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/search/search",
+    "pages/category/category"
    
 
   ],
@@ -27,12 +28,6 @@
       "iconPath":"image/home.png",
       "pagePath":"pages/index/index",
       "text":"首页"},
-
-     {
-       "selectedIconPath":"image/rili_true.png",
-       "iconPath":"image/rili.png",
-       "pagePath":"pages/rili/rili",
-       "text":"日程表"},
       
       {"selectedIconPath": "image/shuben_true.png",
         "iconPath": "image/shuben.png",

@@ -9,7 +9,8 @@
 
 <view class="Function">
 <!-- 菜单栏 -->
-<navigator hover-class="none"> <image src="/image/category.png" class="category_style"></image></navigator>
+<navigator url="/pages/category/category" hover-class="none" ><image src="/image/category.png" class="category_style"></image></navigator>
+
 <!-- 搜索 -->
 <navigator url="/pages/search/search" hover-class="none">
  <image src="/image/search.png" class="search_style"></image></navigator>
@@ -20,23 +21,23 @@
 
 
 
-<view class="bei_body">
+<view class="bei_body" wx:for='{{bei}}' wx:key='item'>
 <!-- 单条备忘录 -->    
   <view class="bei">
   <!-- 1.备忘录标题 -->
     <view class="bei_title">
-    <text>1.去北湖南路拿快递</text>
+    <text>{{index+1}}.{{item.title}}</text>
     </view>
 
   <view class="container02">
 
   <!-- 2.备忘录记录时间 -->
 
-    <view class="bei_recordtime"><text>11月21日</text></view>
+    <view class="bei_recordtime"><text>{{item.recordTime}}</text></view>
  
 
   <!-- 3.备忘录收藏 -->
-    <view class="bei_favorite"><image src="/image/favorite.png" class="favorite_style"></image></view>
+    <view class="bei_favorite" ><image bindtap="Tap_fav" src= "/image/favorite.png" class="favorite_style"></image></view>
 
  </view>
 
@@ -49,15 +50,10 @@
 
     <!-- 时间 -->
     <view class="remind_time">
-    <text>12月10日 10：00</text>
+    <text>{{item.remindTime}}</text>
     </view>
   </view>
   </view>
 
-
-
-  <view class="bei" bindlongpress="myTap"></view>
-  <view class="bei"></view>
-  <view class="bei"></view>
 
 </view>
