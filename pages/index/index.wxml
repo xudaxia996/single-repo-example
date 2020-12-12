@@ -66,9 +66,9 @@
 				</view>
       </view>
        </view>     
-  <view class="job_list" style="display:flex ;flex-direction:column;justify-content: center;align-items: center;">
-       
-  </view>
+  
+  <!--<view class="job_list" style="display:flex ;flex-direction:column;justify-content: center;align-items: center;"/>-->     
+ 
   <view bindtap="clickme01" class="btn1" style=" position: fixed;bottom:200rpx;"></view>
   <view bindtap="clickme02" class="btn2" style=" position: fixed;bottom:300rpx;"></view>
   
