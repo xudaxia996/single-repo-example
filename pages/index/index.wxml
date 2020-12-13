@@ -1,6 +1,4 @@
-
- <!-- 上方栏 -->
-
+<!-- 上方栏 -->
 <view class="container01">
 
   <!-- 备忘录文字标题 -->
@@ -9,7 +7,9 @@
 
   <view class="Function">
   <!-- 菜单栏 -->
-  <navigator hover-class="none"> <image src="/image/category.png" class="category_style"></image></navigator>
+  <view bindtap="onChange">
+   <image src="/image/category.png" class="category_style"></image>
+  </view>
   <!-- 搜索 -->
   <navigator url="/pages/search/search" hover-class="none">
   <image src="/image/search.png" class="search_style"></image></navigator>
@@ -69,9 +69,55 @@
   <image src="/image/Add.png" style="width:45px; height:45px;"></image>
 </view>
 
+<!--  ----------------------------------拓展页面-------------------------------------  -->
 
 
-<!-- 小程序下方弹出框（对备忘录的操作） -->
+<!-- 1.左侧边栏（点击菜单栏按钮弹出） -->
+<view class="sidebar {{open?'show':''}}">
+  <!-- 左侧边栏的内容 -->
+  <view class="cate_Function">
+    <!-- 用户头像 -->
+    <view>
+    <image style="width:100px;height:100px;border-radius:50%;overflow:hidden;" src="/image/touxiang.png">
+    </image>
+    </view>
+
+    <!-- 其他功能 -->
+    <view>
+      <view style="display: flex; flex-direction: column;align-items:center;align-items:flex-start;">
+
+      <button class="Button_style" hover-class="btn-class">
+      <image class="Button_icon" src="/image/new.png"></image>
+      <view>新建备忘</view>
+      </button>
+
+      <button class="Button_style" hover-class="btn-class">
+      <image class="Button_icon" src="/image/fav.png"></image>
+      <view>收藏夹</view>
+      </button>
+
+      <button class="Button_style" hover-class="btn-class">
+      <image class="Button_icon" src="/image/setting.png"></image>
+      <view>设置</view>
+      </button>
+
+      <button class="Button_style" hover-class="btn-class">
+      <image class="Button_icon" src="/image/feedback.png"></image>
+      <view>问题反馈</view>
+      </button>
+
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="sidebar-shade" style="display:{{open?'block':''}}" bindtap="onChange"></view>
+
+
+
+
+<!-- 2.小程序下方弹出框（长按某条备忘录弹出） -->
 
 <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
 
@@ -82,7 +128,7 @@
 <view class="button_Function">
   <!-- 1.修改备忘录(标题、提示时间) -->
   <view>
-  <image src="/image/write.png" class="function_iconstyle"></image>
+  <image src="/image/Write.png" class="function_iconstyle"></image>
   </view>
 
 

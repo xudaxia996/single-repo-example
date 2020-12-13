@@ -6,9 +6,9 @@ Page({
    */
   data: {
     
-    showModalStatus: false,  //下方弹出层初始值：false
-    animationData: '',
-
+    showModalStatus: false,  //下方弹出层 初始值：false
+    animationData: '', 
+    open: false,   //左侧边菜单栏 初始值:false
     bei: [
       {
         title: '去北湖南路拿快递',
@@ -23,33 +23,11 @@ Page({
         isCollect: false, // 备忘录收藏功能：默认没有收藏
       },
       {
-        title: '完成毛概作业',
+        title: '完成毛概论文',
         recordtime: '12月5日',
         remindtime: '12月31日 20：00',
         isCollect: false, // 备忘录收藏功能：默认没有收藏
       },
-      {
-        title: '吃饭',
-        recordtime: '12月5日',
-        remindtime: '12月31日 20：00',
-        isCollect: false, // 备忘录收藏功能：默认没有收藏
-      },
-      {
-        title: '睡觉',
-        recordtime: '12月5日',
-        remindtime: '12月31日 20：00',
-        isCollect: false, // 备忘录收藏功能：默认没有收藏
-      }, 
-      {
-        title: '玩游戏',
-        recordtime: '12月5日',
-        remindtime: '12月31日 20：00',
-        isCollect: false, // 备忘录收藏功能：默认没有收藏
-      }
-
-
-
-
 
     ],
 
@@ -65,6 +43,13 @@ Page({
 
     },
 
+  // 左侧菜单栏事件
+  onChange(e) {
+    var that = this;
+    that.setData({
+      open: !that.data.open
+    })
+  },
 
   // 点击收藏事件
   toCollect: function (res) {
