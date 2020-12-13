@@ -54,3 +54,4 @@
   <view class="bei"></view>
 
 </view>
+<button bindtap="shouquan" type='primary'>获取订阅消息授权</button>
