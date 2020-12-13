@@ -1,59 +1,109 @@
 
  <!-- 上方栏 -->
-<view class="kuang_body">
+
 <view class="container01">
 
-<!-- 备忘录文字标题 -->
-<view class="title"><text class="title_word">备忘录</text></view>
+  <!-- 备忘录文字标题 -->
+  <view class="title"><text class="title_word">————————————</text></view>
 
 
-<view class="Function">
-<!-- 菜单栏 -->
-<navigator url="/pages/category/category" hover-class="none" ><image src="/image/category.png" class="category_style"></image></navigator>
-
-<!-- 搜索 -->
-<navigator url="/pages/search/search" hover-class="none">
- <image src="/image/search.png" class="search_style"></image></navigator>
-
- </view>
-</view>
+  <view class="Function">
+  <!-- 菜单栏 -->
+  <navigator hover-class="none"> <image src="/image/category.png" class="category_style"></image></navigator>
+  <!-- 搜索 -->
+  <navigator url="/pages/search/search" hover-class="none">
+  <image src="/image/search.png" class="search_style"></image></navigator>
+  </view>
 </view>
 
 
-
+<!-- 利用for循环 显示所有已记录备忘录 -->
 <view class="bei_body" wx:for='{{bei}}' wx:key='item'>
 <!-- 单条备忘录 -->    
-  <view class="bei">
+  <view class="bei" bindlongpress="showModal">
   <!-- 1.备忘录标题 -->
     <view class="bei_title">
-    <text>{{index+1}}.{{item.title}}</text>
+    <text>{{item.title}}</text>
+    </view>
+
+  <!-- 2.备忘录编号及收藏 -->
+  <view class="bei_NumAndFav">
+    <text>{{index+1}}</text>
+
+  <!-- 收藏功能 -->
+  <view bindtap="toCollect" data-index="{{index}}">
+
+  <block wx:if='{{item.isCollect == true}}'>
+  <image src="/image/favorite-filling.png" class=".favorite_style"></image>  
+  </block>
+
+  <block wx:elif='{{item.isCollect}}== false'>
+  <image src="/image/favorite.png" class=".favorite_style"></image>
+  </block>
+  </view>
+
+    
     </view>
 
   <view class="container02">
+  <!-- 3.备忘录记录时间及提示 -->
 
-  <!-- 2.备忘录记录时间 -->
+    <view class="bei_recordtime"><text>{{item.recordtime}}</text></view>
 
-    <view class="bei_recordtime"><text>{{item.recordTime}}</text></view>
- 
-
-  <!-- 3.备忘录收藏 -->
-    <view class="bei_favorite" ><image bindtap="Tap_fav" src= "/image/favorite.png" class="favorite_style"></image></view>
-
- </view>
-
-  <!--4.备忘录提示 -->
     <view class="container03">
     <!-- 图标 -->
-    <view class="remind_icon">
     <image src="/image/time.png" class="time_style"></image>
-    </view>
-
     <!-- 时间 -->
     <view class="remind_time">
-    <text>{{item.remindTime}}</text>
+    <text>{{item.remindtime}}</text>
     </view>
+
   </view>
+  </view>
+</view>
+</view>
+
+
+<!-- 备忘录添加按钮(固定在页面中的右下角位置) -->
+<view class="add_style">
+  <image src="/image/Add.png" style="width:45px; height:45px;"></image>
+</view>
+
+
+
+<!-- 小程序下方弹出框（对备忘录的操作） -->
+
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+
+
+<!-- 弹出层内部内容图标 -->
+<view class="button_Function">
+  <!-- 1.修改备忘录(标题、提示时间) -->
+  <view>
+  <image src="/image/write.png" class="function_iconstyle"></image>
   </view>
 
+
+  <!-- 2.删除备忘录 -->
+  <view>
+  <image src="/image/delete.png" class="function_iconstyle"></image>
+  </view>
+
+
+  <!-- 3.返回主页(关闭下选栏) -->
+  <view>
+  <image src="/image/return.png" class="function_iconstyle" bindtap="hideModal"></image>
+  </view>
+</view>
+
+<!-- 弹出层内部内容文字 -->
+<view class="button_Function">
+<text style="font-size:10px;">编辑</text>
+<text style="font-size:10px;">删除</text>
+<text style="font-size:10px;" bindtap="hideModal">返回</text>
+</view>
 
 </view>
+

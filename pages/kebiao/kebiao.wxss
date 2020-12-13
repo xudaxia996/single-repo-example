@@ -1,1 +1,5 @@
+
 /* pages/kebiao/kebiao.wxss */
+page{
+  background-color:white;}
+  

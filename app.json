@@ -3,17 +3,15 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/kebiao/kebiao",
-    "pages/user/user",
-    "pages/search/search",
-    "pages/category/category"
+    "pages/user/user"
    
 
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor":"#fff",
+    "navigationBarBackgroundColor":"#1296db",
     "navigationBarTitleText": "备忘录",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
