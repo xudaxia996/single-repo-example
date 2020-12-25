@@ -66,7 +66,7 @@ Page({
 })
 
 //订阅消息授权//
-Page({//获取授权的点击事件
+Page({/*获取授权的点击事件*/
   shouquan(){
     wx.requestSubscribeMessage({
       tmplIds:['JS4RkICmld_neTq4_GpIBbAxK-uFTtfmAbAh_Ec8cI0'],
@@ -80,8 +80,8 @@ Page({//获取授权的点击事件
   }
 })
 
-//获取用户的openid
-getOpenid();{
+/*获取用户的openid*/
+getOpenid(){
   wx.cloud.callFunction({
     name:"getopenid"
   }).then(res=>{
@@ -93,7 +93,7 @@ getOpenid();{
   })
 }
 //发送模板消息到指定用户，推送之前要先获得用户的openid
-send(openid);{
+send(openid){
   wx.cloud.callFunction({
     name:"sendMsg",
     data:{
@@ -105,4 +105,5 @@ send(openid);{
     console.log("推送消息失败",res)
   })
 }
-})
+}
+)
