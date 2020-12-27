@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/input-test/input",
     "pages/index/index",
 
     "pages/indexcloud/indexcloud",
