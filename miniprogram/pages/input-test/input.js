@@ -10,9 +10,9 @@ Page({
  },
  addbtn:function(){
    if(this.data.inputValue){
-    wx.redirectTo({
+   /* wx.redirectTo({
      url: '../ordered/ordered'
-    })
+    })*/
     wx.setStorage({
      key:"addTel",
      data:this.data.inputValue
