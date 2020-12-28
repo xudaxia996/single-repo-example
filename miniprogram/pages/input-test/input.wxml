@@ -1,4 +1,4 @@
 <view class="add-page">
   <input placeholder="输入手机号添加客户" type="number" bindinput="bindKeyInput" value="{{inputValue}}" />
-   <button type="warn" class="add-btn" bindtap="addbtn" >添加</button>
+   <button type="warn" class="add-btn" bindtap="nextStep" >添加</button>
 </view>
