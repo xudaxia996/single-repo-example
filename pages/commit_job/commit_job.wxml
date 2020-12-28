@@ -78,7 +78,7 @@
                     </label>
                 </view>
         </view>
-  
+        <button style="width:750rpx;background-color:lightblue;" form-type="submit" bindtap="onLoad">提交</button>
   <button style="width:750rpx;background-color:lightblue;" form-type="submit" bindtap="saveMemo">提交</button>
 </form>
 
