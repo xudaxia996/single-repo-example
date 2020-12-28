@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-import plugin from '../../wx_calendar-master/src/component/v2/plugins/index.js'
+/*import plugin from '../../wx_calendar-master/src/component/v2/plugins/index.js'
 import todo from '../../wx_calendar-master/src/component/v2/plugins/todo.js'
 import selectable from '../../wx_calendar-master/src/component/v2/plugins/selectable.js'
 import solarLunar from '../../wx_calendar-master/src/component/v2/plugins/solarLunar/index.js'
@@ -89,4 +89,24 @@ inputTyping: function (e) {
       hasUserInfo: true
     })
   }
-})
+})*/
+
+
+var app = getApp()
+Page({
+  data:{
+    addtel : ''
+  },
+  onShow:function(){
+  var that = this;
+  wx.getStorage({
+   key: 'addTel',
+   success: function(res) {
+     console.log(res.data)
+     that.setData({
+      addtel:res.data
+     })
+   } 
+  })
+ }
+}) 
