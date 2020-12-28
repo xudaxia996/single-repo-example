@@ -1,7 +1,5 @@
 <!--pages/databaseGuide/databaseGuide.wxml-->
 
-
-
   <view class="add-page">
   <input id="up_input" name="num" placeholder="输入手机号添加客户" type="number" bindinput="num1" value="{{num}}" />
    <button type="warn" class="default" bindtap="nextStep" >预先点击这个</button>
