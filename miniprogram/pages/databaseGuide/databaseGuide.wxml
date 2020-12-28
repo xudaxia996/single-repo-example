@@ -3,7 +3,8 @@
 
 
   <view class="add-page">
-  <input placeholder="输入手机号添加客户" type="number" bindinput="bindKeyInput" value="{{inputValue}}" />
-   <button type="warn" class="add-btn" bindtap="nextStep" >添加</button>
+  <input id="up_input" name="num" placeholder="输入手机号添加客户" type="number" bindinput="num1" value="{{num}}" />
+   <button type="warn" class="default" bindtap="nextStep" >预先点击这个</button>
+   <button type="warn" class="default" bindtap="onAdd" >添加</button>
 </view>
 

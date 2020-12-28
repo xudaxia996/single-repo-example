@@ -3,41 +3,47 @@
 var app = getApp()
 
 Page({
-
+///存什么数据要改↓↓↓↓↓
   data: {
-    countId: '',
     openid: '',
-    num: null,
     queryResult: '',
+    num:''
   },
-  
-/*
-  bindKeyInput:function(e){
+///存几个数据要几个下面的部分，改第一行冒号里前的文字（对应着wxml文件中input组件的bindinput属性），
+   num1: function (e) {
     this.setData({
-     num: e.detail.value
+      num: e.detail.value
     })
-   },
-*/
+  },
+
+
   onLoad: function (options) {
     if (app.globalData.openid) {
       this.setData({
-        openid: app.globalData.openid
+        openid: app.globalData.openid,
       })
     }
-    
 },
 
   onAdd: function () {
      const db = wx.cloud.database()
-     db.collection('infor').add({ //括号里的是目标数据库的集合名
-       data: {
-        countId: res._id,
-        num: e.detail.value
-       },
-       
-     })
+     db.collection('infor').add({
+      data:{
+        ///存什么数据要改↓↓↓↓↓
+        num: this.data.num
+      },
+      success:res=>{
+        console.log(res);
+      },
+      fail:err=>{
+        console.log(err);
+      }
+    })
   },
 
+
+
+ 
   onQuery: function() {
     // const db = wx.cloud.database()
     // // 查询当前用户所有的 counters
