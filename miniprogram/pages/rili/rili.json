@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "calendar": "../../wx_calendar-master/calendar_v1/index"
+    } 
 }
