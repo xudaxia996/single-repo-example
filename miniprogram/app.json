@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-
     "pages/indexcloud/indexcloud",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -15,8 +14,7 @@
     "pages/openapi/cloudid/cloudid",
     "pages/im/im",
     "pages/im/room/room",
-
-    
+    "pages/commit_job/commit_job",
     "pages/logs/logs",
     "pages/rili/rili",
     "pages/kebiao/kebiao",

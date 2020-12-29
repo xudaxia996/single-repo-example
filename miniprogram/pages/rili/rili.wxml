@@ -1,1 +1,75 @@
-待开发中...
+<!--index.wxml-->
+<calendar class="calendar"/>
+<view class="page"> 
+        <view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+          <form class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+              <i class="weui-icon-search"></i>
+                        <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                        <span class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput"></span>
+            </view>
+            <label class="weui-search-bar__label" bindtap="showInput">
+              <i class="weui-icon-search"></i>
+                        <span class="weui-search-bar__text">搜索</span>
+            </label>
+          </form>
+                <view class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+          <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>实时搜索文本</view>
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>实时搜索文本</view>
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>实时搜索文本</view>
+            </view>
+          </view>
+          <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd weui-cell_primary">
+              <view>实时搜索文本</view>
+            </view>
+          </view>
+        </view>
+
+      <view class="weui-tab"  style="height: 100%;">
+			<view class="weui-tab__panel">
+			</view>
+			<view class="weui-tabbar">
+				<view class="weui-tabbar__item weui-bar__item_on">
+					<view style="display: inline-block; position: relative;">
+						<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
+						<text class="weui-badge" style="position: absolute; top: -2px; right: -13px;">8</text>
+					</view>
+					<view class="weui-tabbar__label">备忘录</view>
+				</view>
+				<view class="weui-tabbar__item">
+					<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
+					<view class="weui-tabbar__label">工作台历</view>
+				</view>
+				<view class="weui-tabbar__item">
+					<view style="display: inline-block; position: relative;">
+						<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
+						<text class="weui-badge weui-badge_dot" style="position: absolute; top: 0; right: -6px;"></text>
+					</view>
+					<view class="weui-tabbar__label">课表</view>
+				</view>
+				<view class="weui-tabbar__item">
+					<image src="../images/icon_tabbar.png" alt class="weui-tabbar__icon"></image>
+					<view class="weui-tabbar__label">小组任务</view>
+				</view>
+      </view>
+       </view>     
+  
+  <!--<view class="job_list" style="display:flex ;flex-direction:column;justify-content: center;align-items: center;"/>-->     
+ 
+  <view bindtap="clickme01" class="btn1" style=" position: fixed;bottom:200rpx;"></view>
+  <view bindtap="clickme02" class="btn2" style=" position: fixed;bottom:300rpx;"></view>
+  
+ </view>
