@@ -65,13 +65,13 @@ bindchange_1: function (e) {
      db.collection('bwl').add({
       data:{
           title:this.data.title,
-  ddl:this.data.ddl,
-  time:this.data.time,
-  value:this.data.value,
-  time_detail:this.data.time_detail,
-  urge:this.data.urge,
-  remind:this.data.remind,
-  memoLists:this.data.memoLists
+          ddl:this.data.ddl,
+          time:this.data.time,
+          value:this.data.value,
+          time_detail:this.data.time_detail,
+          urge:this.data.urge,
+          remind:this.data.remind,
+          memoLists:this.data.memoLists
  
       },
       success:res=>{
