@@ -7,7 +7,6 @@ Page({
     openid:'',
     title:'',
     ddl:"",
-    time:"",
     value:"",
     time_detail:"",
     urge:"",
@@ -65,7 +64,6 @@ bindchange_1: function (e) {
       data:{
           title:this.data.title,
           ddl:this.data.ddl,
-          time:this.data.time,
           value:this.data.value,
           time_detail:this.data.time_detail,
           urge:this.data.urge,
