@@ -36,6 +36,20 @@ Page({
       }
     })
     },    
+  
+  /**
+     * 页面相关事件处理函数--监听用户下拉动作
+     */
+  onPullDownRefresh: function () {
+    wx.showToast({
+      title: '正在刷新数据...',
+      icon: 'loading',
+      duration: 10
+    });
+    this.setData({ fabus: [] });//先清空数据
+    this.loadIndex();//再重新加载数据
+    wx: wx.stopPullDownRefresh();//停止刷新操作
+  },
 
 
   // 左侧菜单栏事件
