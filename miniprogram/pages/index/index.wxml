@@ -65,7 +65,7 @@
 
 
 <!-- 备忘录添加按钮(固定在页面中的右下角位置) -->
-<navigator url="pages/commit_job/commit_job">
+<navigator url="/pages/commit_job/commit_job">
 <view class="add_style">
   <image src="/images/Add.png" style="width:45px; height:45px;"></image>
 </view>
@@ -87,7 +87,7 @@
     <view>
       <view style="display: flex; flex-direction: column;align-items:center;align-items:flex-start;">
 
-      <navigator url="pages/commit_job/commit_job">
+      <navigator url="/pages/commit_job/commit_job">
       <button class="Button_style" hover-class="btn-class">
       <image class="Button_icon" src="/images/new.png"></image>
       <view>新建备忘</view>
