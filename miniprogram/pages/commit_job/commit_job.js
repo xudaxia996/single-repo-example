@@ -12,7 +12,6 @@ Page({
     time_detail:"",
     urge:"",
     remind:"",
-    memoLists:[]
 },
 
 memotitle: function(e){
@@ -71,7 +70,6 @@ bindchange_1: function (e) {
           time_detail:this.data.time_detail,
           urge:this.data.urge,
           remind:this.data.remind,
-          memoLists:this.data.memoLists
  
       },
       success:res=>{
