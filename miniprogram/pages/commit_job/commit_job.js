@@ -77,6 +77,11 @@ bindchange_1: function (e) {
         console.log(err);
       }
     })
+        wx.showToast({
+      title: '提交成功！',  // 标题
+      icon: 'success',   // 图标类型，默认success
+      duration: 1500   // 提示窗停留时间，默认1500ms
+    })
   },
 
 
