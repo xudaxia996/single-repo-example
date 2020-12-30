@@ -40,12 +40,6 @@
       "pagePath":"pages/index/index",
       "text":"首页"},
 
-     {
-       "selectedIconPath":"images/rili_true.png",
-       "iconPath":"images/rili.png",
-       "pagePath":"pages/rili/rili",
-       "text":"日程表"},
-      
       {"selectedIconPath": "images/shuben_true.png",
         "iconPath": "images/shuben.png",
         "pagePath": "pages/kebiao/kebiao",
