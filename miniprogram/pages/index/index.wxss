@@ -1,0 +1,243 @@
+/* 1.页面 */
+page{
+  background-color:whitesmoke;
+}
+
+/* 2.上方栏 */
+.container01{
+  background-color:#1296db;
+  width:100%;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+.title{
+  width: 750rpx;
+  height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -30px;
+  }
+
+.title_word{
+  text-align: center;
+  font-size:15px;
+  color:white;
+}
+
+.Function{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.category_style{
+  width:20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.search_style{
+  width:22px;
+  height: 21px;
+  margin-right: 5px;
+}
+
+
+
+/* 3.备忘录 */
+
+.bei{
+  background-color:cornsilk;
+  height: 60px;
+  color:rgb(48, 48, 48);
+  border:5px;
+  border-radius: 35px;
+  margin: 15px 15px 0px 15px;
+  padding-top: 10px;
+  box-shadow: 3px 3px 3px rgb(77, 71, 71);
+}
+
+/* 1.备忘录标题 */
+.bei_title{
+  font-size:18px;
+  margin: 0px 0px -10px 35px;
+
+}
+
+.bei_NumAndFav{
+  display:flex;
+  vertical-align: middle;
+  justify-content: space-between;
+  font-size:20px;
+  margin-left: 15px;
+}
+
+.container02{
+  display:flex;
+  justify-content: space-between;
+  vertical-align: bottom;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 40px;
+  margin-top: -8px;
+}
+
+.container03{
+  display:flex;
+  justify-content: space-between;
+  vertical-align: bottom;
+  align-items:right;
+}
+
+/* 2.备忘录记录时间 */
+.bei_recordtime{
+  font-size:12px;
+  margin: 0px 0px 0px 26px;
+}
+
+/* 3.备忘录收藏 */
+
+.favorite_style{
+  margin-top: 0px;
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+}
+
+.time_style{
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.remind_time{
+  font-size:12px;
+}
+
+/* 添加备忘录按钮样式 */
+.add_style{
+  position:fixed; 
+  bottom:0;
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+
+
+/* ----------------------------------拓展页面的样式-------------------------------------  */
+
+/* 侧边栏 */
+.sidebar {
+  background:rgb(182, 212, 226);       /*侧边栏背景颜色*/
+  box-shadow: 4rpx 4rpx 12px rgba(0,0,0,.3);
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  overflow: auto;
+  transform: translate(-600rpx,0);
+  transition: transform .3s;
+  top: 0;
+  width: 350rpx;   /*侧边栏的宽度*/ 
+  z-index: 100;
+}
+.sidebar.show {
+  transform: translate(0,0);
+}
+.sidebar-shade {
+  background: rgba(0,0,0,.3);
+  display: none;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+/* 侧边栏内的内容样式 */
+.cate_Function{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 50px;
+}
+
+.Button_style{
+  width: 120px;
+  margin-top: 20rpx;
+  background-color:rgb(124, 153, 216);   /*按钮背景颜色*/
+  color: white;                         /*字体颜色*/
+  border-radius: 98rpx; 
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btn-class{
+background-color:#6f93a7;
+}
+
+.Button_icon {
+  margin-right: 8rpx;
+  width: 12px;
+  height: 12px;
+}
+
+.Button_icon::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
+
+
+
+/* 下方弹出层样式 */
+.commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;   /*透明度 */
+  overflow: hidden;
+  z-index: 9;
+  color: #fff;
+}
+
+.commodity_attr_box {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background:white;
+  padding-top: 20rpx;
+  height: 45px;
+}
+.commodity_attr_box{
+  text-align: center;
+}
+
+/* 下方栏内容样式 */
+.button_Function{
+  display:flex;
+  justify-content:space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.function_iconstyle{
+  width: 25px;
+  height: 25px;
+}
